@@ -10,6 +10,8 @@ class Myapp extends StatelessWidget {
         home: Scaffold(
           appBar: AppBar(
             title: Text("一覧"),
+            leading: Text("leading"),
+            actions: [IconButton(icon: Icon(Icons.add))],
           ),
           body: ListView(
             children: [
