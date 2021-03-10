@@ -12,6 +12,7 @@ class Myapp extends StatelessWidget {
             title: Text("一覧"),
             leading: Text("leading"),
             actions: [IconButton(icon: Icon(Icons.add))],
+            centerTitle: true,
           ),
           body: ListView(
             children: [
