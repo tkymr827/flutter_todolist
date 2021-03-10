@@ -6,13 +6,21 @@ class Myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: "this is title",
+        title: "一覧",
         home: Scaffold(
-            appBar: AppBar(
-              title: Text("first"),
-            ),
-            body: Center(
-              child: Text("this is text"),
-            )));
+          appBar: AppBar(
+            title: Text("一覧"),
+          ),
+          body: ListView(
+            children: [
+              Card(child: ListTile(title: Text("hoge"))),
+              Card(child: ListTile(title: Text("hoge"))),
+              Card(child: ListTile(title: Text("hoge"))),
+              Card(
+                child: Center(child: Text("hogehoge")),
+              )
+            ],
+          ),
+        ));
   }
 }
