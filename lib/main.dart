@@ -10,7 +10,6 @@ class Myapp extends StatelessWidget {
         home: Scaffold(
           appBar: AppBar(
             title: Text("一覧"),
-            leading: Text("leading"),
             actions: [IconButton(icon: Icon(Icons.add))],
             centerTitle: true,
           ),
@@ -19,9 +18,6 @@ class Myapp extends StatelessWidget {
               Card(child: ListTile(title: Text("hoge"))),
               Card(child: ListTile(title: Text("hoge"))),
               Card(child: ListTile(title: Text("hoge"))),
-              Card(
-                child: Center(child: Text("hogehoge")),
-              )
             ],
           ),
         ));
