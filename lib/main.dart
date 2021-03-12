@@ -15,11 +15,15 @@ class Myapp extends StatelessWidget {
           ),
           body: ListView(
             children: [
-              Card(child: ListTile(title: Text("hoge"))),
+              Card(child: ListTile(title: Todos())),
               Card(child: ListTile(title: Text("hoge"))),
               Card(child: ListTile(title: Text("hoge"))),
             ],
           ),
         ));
   }
+}
+
+Widget Todos() {
+  return Text("moge");
 }
