@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import './list.dart';
 import './post.dart';
+import './detail.dart';
 
 void main() => runApp(Myapp());
 
@@ -13,6 +14,7 @@ class Myapp extends StatelessWidget {
       routes: {
         '/': (context) => List(),
         '/post': (context) => Post(),
+        '/detail': (context) => Detail(),
       },
     );
   }

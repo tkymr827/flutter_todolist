@@ -31,13 +31,28 @@ class GetList extends StatelessWidget {
     return ListView(
       children: [
         Card(
-          child: ListTile(title: Text('1ban')),
+          child: ListTile(
+            title: Text('1ban'),
+            onTap: () {
+              Navigator.pushNamed(context, '/detail', arguments: '1ban');
+            },
+          ),
         ),
         Card(
-          child: ListTile(title: Text('2ban')),
+          child: ListTile(
+            title: Text('2ban'),
+            onTap: () {
+              Navigator.pushNamed(context, '/detail', arguments: '2ban');
+            },
+          ),
         ),
         Card(
-          child: ListTile(title: Text('3ban')),
+          child: ListTile(
+            title: Text('3ban'),
+            onTap: () {
+              Navigator.pushNamed(context, '/detail', arguments: '3ban');
+            },
+          ),
         ),
       ],
     );
