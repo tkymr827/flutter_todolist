@@ -9,23 +9,37 @@ class _ListState extends State<List> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text('一覧'),
-          actions: [
-            IconButton(
-              icon: Icon(Icons.add),
-              onPressed: () {
-                Navigator.pushNamed(context, '/post');
-              },
-            ),
-          ],
+      appBar: AppBar(
+        title: Text('一覧'),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.add),
+            onPressed: () {
+              Navigator.pushNamed(context, '/post');
+            },
+          ),
+        ],
+      ),
+      body: GetList(),
+    );
+  }
+}
+
+class GetList extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      children: [
+        Card(
+          child: ListTile(title: Text('1ban')),
         ),
-        body: ListView(
-          children: [
-            Card(child: ListTile(title: Text('hoge'))),
-            Card(child: ListTile(title: Text('hoge'))),
-            Card(child: ListTile(title: Text('hoge'))),
-          ],
-        ));
+        Card(
+          child: ListTile(title: Text('2ban')),
+        ),
+        Card(
+          child: ListTile(title: Text('3ban')),
+        ),
+      ],
+    );
   }
 }
