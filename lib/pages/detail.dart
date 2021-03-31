@@ -9,6 +9,7 @@ class _DetailState extends State<Detail> {
   @override
   Widget build(BuildContext context) {
     final args = ModalRoute.of(context).settings.arguments;
+    print(args);
 
     return Scaffold(
       appBar: AppBar(
@@ -16,6 +17,8 @@ class _DetailState extends State<Detail> {
       ),
       body: Container(
         child: Text(args),
+        // child: Text('args'),
+        // child: Text(args[1]),
       ),
     );
   }

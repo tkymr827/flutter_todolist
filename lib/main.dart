@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import './list.dart';
-import './post.dart';
-import './detail.dart';
+import 'pages/list.dart';
+import 'pages/post.dart';
+import 'pages/detail.dart';
 
 void main() => runApp(Myapp());
 

@@ -28,6 +28,9 @@ class _ListState extends State<List> {
 class GetList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // const array = ['a', 'b', 'c'];
+    dynamic array = {'a': 'apple', 'b': 'banana'};
+
     return ListView(
       children: [
         Card(
@@ -51,6 +54,14 @@ class GetList extends StatelessWidget {
             title: Text('3ban'),
             onTap: () {
               Navigator.pushNamed(context, '/detail', arguments: '3ban');
+            },
+          ),
+        ),
+        Card(
+          child: ListTile(
+            title: Text('4ban'),
+            onTap: () {
+              Navigator.pushNamed(context, '/detail', arguments: array);
             },
           ),
         ),
