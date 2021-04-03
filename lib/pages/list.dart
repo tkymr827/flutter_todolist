@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_todolist/pages/post.dart';
+
+import 'detail.dart';
 
 class List extends StatefulWidget {
   @override
@@ -15,7 +18,12 @@ class _ListState extends State<List> {
           IconButton(
             icon: Icon(Icons.add),
             onPressed: () {
-              Navigator.pushNamed(context, '/post');
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Post(),
+                ),
+              );
             },
           ),
         ],
@@ -37,33 +45,34 @@ class GetList extends StatelessWidget {
           child: ListTile(
             title: Text('1ban'),
             onTap: () {
-              Navigator.pushNamed(context, '/detail', arguments: '1ban');
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Detail('1ban')));
             },
           ),
         ),
         Card(
           child: ListTile(
-            title: Text('2ban'),
-            onTap: () {
-              Navigator.pushNamed(context, '/detail', arguments: '2ban');
-            },
-          ),
+              title: Text('2ban'),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Detail('2ban')));
+              }),
         ),
         Card(
           child: ListTile(
-            title: Text('3ban'),
-            onTap: () {
-              Navigator.pushNamed(context, '/detail', arguments: '3ban');
-            },
-          ),
+              title: Text('3ban'),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Detail('3ban')));
+              }),
         ),
         Card(
           child: ListTile(
-            title: Text('4ban'),
-            onTap: () {
-              Navigator.pushNamed(context, '/detail', arguments: array);
-            },
-          ),
+              title: Text('4ban'),
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Detail('4ban')));
+              }),
         ),
       ],
     );
