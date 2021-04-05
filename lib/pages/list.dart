@@ -48,8 +48,10 @@ class _ListState extends State<List> {
                 title: Text(todos[index]['title']),
                 subtitle: Text('投稿日:${todos[index]['created_at']}'),
                 onTap: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Detail()));
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => Detail(todos[index])));
                 }),
           );
         },
