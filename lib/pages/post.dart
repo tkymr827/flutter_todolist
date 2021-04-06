@@ -17,16 +17,16 @@ class FormTemplate extends StatelessWidget {
     return Form(
       child: Column(
         children: [
-          TextField(
+          TextFormField(
             maxLength: 20,
             decoration: InputDecoration(labelText: 'タイトル'),
           ),
-          TextField(
+          TextFormField(
             maxLength: 10,
             maxLines: 3,
             decoration: InputDecoration(labelText: '内容'),
           ),
-          TextField(
+          TextFormField(
             maxLength: 4,
             maxLines: 1,
             keyboardType: TextInputType.number,
