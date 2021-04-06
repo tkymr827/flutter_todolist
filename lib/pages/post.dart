@@ -14,7 +14,8 @@ class Post extends StatelessWidget {
 class FormTemplate extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Form(
+    return Container(
+      margin: EdgeInsets.all(50),
       child: Column(
         children: [
           TextFormField(
