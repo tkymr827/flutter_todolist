@@ -20,18 +20,22 @@ class FormTemplate extends StatelessWidget {
         children: [
           TextFormField(
             maxLength: 20,
-            decoration: InputDecoration(labelText: 'タイトル'),
+            decoration: InputDecoration(
+                labelText: 'タイトル', icon: Icon(Icons.subtitles_outlined)),
           ),
           TextFormField(
             maxLength: 10,
             maxLines: 3,
-            decoration: InputDecoration(labelText: '内容'),
+            decoration: InputDecoration(
+                labelText: '内容', icon: Icon(Icons.sms_outlined)),
           ),
           TextFormField(
             maxLength: 4,
             maxLines: 1,
             keyboardType: TextInputType.number,
-            decoration: InputDecoration(labelText: '削除用パスワード'),
+            decoration: InputDecoration(
+                labelText: '削除用パスワード',
+                icon: Icon(Icons.keyboard_hide_outlined)),
             obscureText: true,
           ),
           RaisedButton(
