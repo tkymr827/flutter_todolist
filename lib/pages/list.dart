@@ -44,6 +44,7 @@ class _ListState extends State<List> {
           return Container(
             height: 80,
             color: Colors.cyan,
+            margin: EdgeInsets.fromLTRB(10, 10, 10, 0),
             child: ListTile(
                 title: Text(todos[index]['title']),
                 subtitle: Text('投稿日:${todos[index]['created_at']}'),
