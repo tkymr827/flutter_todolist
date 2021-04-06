@@ -34,13 +34,15 @@ class FormTemplate extends StatelessWidget {
             obscureText: true,
           ),
           RaisedButton(
-            onPressed: () {
-              print('submit');
-            },
+            onPressed: _submission,
             child: Text('submit'),
           )
         ],
       ),
     );
+  }
+
+  void _submission() {
+    print("submit");
   }
 }
